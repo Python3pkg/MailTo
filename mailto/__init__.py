@@ -3,7 +3,7 @@
 
 """MailTo"""
 
-__name__ = "MailTo"
+__name__ = "mailto"
 __author__ = 'Shane R. Spencer'
 __email__ = "shane@bogomip.com"
 __license__ = 'MIT'

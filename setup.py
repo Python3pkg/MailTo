@@ -10,7 +10,7 @@ def read(fname):
     return open(os.path.join(os.path.dirname(__file__), fname)).read()
 
 setup(
-    name='MailTo',
+    name='mailto',
     version=__version__,
     author='Shane R. Spencer',
     author_email='shane@bogomip.com',

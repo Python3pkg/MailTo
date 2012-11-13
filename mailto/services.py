@@ -7,6 +7,6 @@ service = {}
 
 def kerio(address, baseuri):
     print address
-    return '{baseuri}/webmail/mailCompose.php?mailTo={address}'.format(baseuri=baseuri, address=urllib.quote_plus(address))
+    return '%s/webmail/mailCompose.php?mailTo=%s' % (baseuri, urllib.quote_plus(address))
 
 service['kerio'] = {'func': kerio, 'args': ['address', 'baseuri']}
