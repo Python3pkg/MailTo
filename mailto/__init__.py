@@ -33,7 +33,7 @@ def index():
     if 'mailto' in request.query:
         address = getaddress(request.query.mailto)
     else:
-        for k, v in request.query.iteritems():
+        for k, v in request.query.items():
             if '@' in k:
                 address = getaddress(k)
 
@@ -43,7 +43,7 @@ def index():
         if var:
             kwargs[arg] = var
             
-    print service['args'], kwargs.keys()
+    print(service['args'], list(kwargs.keys()))
     if set(service['args']) == set(kwargs.keys()):
         newurl = service['func'](**kwargs)
         redirect(newurl)
